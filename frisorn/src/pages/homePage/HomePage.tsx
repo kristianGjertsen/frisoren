@@ -49,7 +49,7 @@ function HomePage() {
     return (
         <>
             <section>
-                <Box className="mx-auto w-full max-w-[1120px] rounded-[28px] bg-hero p-8 sm:p-10">
+                <Box className="w-full rounded-[28px] bg-hero p-8 sm:p-10">
                     <div className="grid items-center gap-8 lg:grid-cols-[1.1fr_0.9fr]">
                         <div>
                             <p className="text-[0.7rem] uppercase tracking-[0.3em] text-accent-dark">
@@ -112,7 +112,7 @@ function HomePage() {
             </section>
 
             <section>
-                <Box className="mx-auto w-full max-w-[1120px] rounded-[28px] p-8 sm:p-10">
+                <Box className="w-full rounded-[28px] p-8 sm:p-10">
                     <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
                         <div>
                             <p className="text-[0.7rem] uppercase tracking-[0.3em] text-accent-dark">
@@ -157,7 +157,7 @@ function HomePage() {
             </section>
 
             <section>
-                <Box className="mx-auto w-full max-w-[1120px] rounded-[28px] p-8 sm:p-10">
+                <Box className="w-full rounded-[28px] p-8 sm:p-10">
                     <div className="flex flex-wrap items-start justify-between gap-6">
                         <div>
                             <p className="text-[0.7rem] uppercase tracking-[0.3em] text-accent-dark">
@@ -203,7 +203,7 @@ function HomePage() {
             </section>
 
             <section>
-                <Box className="mx-auto w-full max-w-[1120px] rounded-[28px] p-8 sm:p-10">
+                <Box className="w-full rounded-[28px] p-8 sm:p-10">
                     <div className="flex flex-wrap items-start justify-between gap-6">
                         <div>
                             <p className="text-[0.7rem] uppercase tracking-[0.3em] text-accent-dark">

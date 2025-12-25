@@ -26,7 +26,7 @@ const embedSrc = `https://www.google.com/maps?q=${mapsQuery}&z=${MAP_ZOOM}&outpu
 function AboutUs() {
     return (
         <section>
-            <Box className="mx-auto w-full max-w-[1120px] rounded-[28px] p-8 sm:p-10">
+            <Box className="w-full rounded-[28px] p-8 sm:p-10">
                 <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
                     <div>
                         <p className="text-[0.7rem] uppercase tracking-[0.3em] text-accent-dark">
@@ -79,7 +79,7 @@ function AboutUs() {
                 </div>
             </Box>
 
-            <div className="mx-auto mt-20 w-full max-w-[1120px] rounded-[28px]">
+            <div className="mt-20 w-full rounded-[28px]">
                 <h3 className="mb-5 text-center font-['Playfair_Display'] text-2xl text-text">
                     Du finner oss pa {ADDRESS}
                 </h3>

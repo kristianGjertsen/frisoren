@@ -3,7 +3,7 @@ import Box from '../../components/elements/Box'
 function ContactPage() {
   return (
     <section>
-      <Box className="mx-auto w-full max-w-[1120px] rounded-[28px] p-8 sm:p-10">
+      <Box className="w-full rounded-[28px] p-8 sm:p-10">
         <div className="flex flex-wrap items-start justify-between gap-6">
           <div>
             <p className="text-[0.9rem] uppercase tracking-[0.3em] text-accent-dark">
@@ -13,7 +13,7 @@ function ContactPage() {
               Kontakt oss
             </h2>
           </div>
-          <p className="max-w-md text-m mt-5text-muted">
+          <p className="mt-5 max-w-md text-sm text-muted">
             Ta kontakt for timebestilling eller sporsmal. Vi svarer raskt og
             finner riktig behandling for deg.
           </p>

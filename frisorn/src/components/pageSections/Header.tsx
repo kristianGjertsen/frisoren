@@ -32,9 +32,9 @@ function Header() {
   }, [])
 
   return (
-    <div className="sticky top-0 z-50 px-6 pt-2 sm:px-10">
+    <div className="sticky top-0 z-50 px-6 pt-2 sm:px-8 lg:px-12">
       <header
-        className={`mx-auto flex w-full max-w-[1120px] items-center justify-between gap-4 rounded-[28px] bg-surface px-6 shadow-elevated transition-all duration-200 sm:px-7 ${
+        className={`flex w-full items-center justify-between gap-4 rounded-[28px] bg-surface px-6 shadow-elevated transition-all duration-200 sm:px-7 ${
           isCompact ? 'py-2' : 'py-3'
         }`}
       >
@@ -81,7 +81,7 @@ function Header() {
         </div>
       </header>
       {isMenuOpen ? (
-        <div className="mx-auto mt-3 w-full max-w-[1120px] rounded-[24px] border border-border-soft bg-surface px-6 py-5 shadow-elevated md:hidden">
+        <div className="mt-3 w-full rounded-[24px] border border-border-soft bg-surface px-6 py-5 shadow-elevated md:hidden">
           <nav className="flex flex-col gap-4 text-sm uppercase tracking-[0.2em] text-text">
             {navItems.map((item) => (
               <a

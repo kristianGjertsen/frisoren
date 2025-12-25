@@ -12,7 +12,7 @@ const getProductImage = (fileName: string) =>
 function ProductsPage() {
   return (
     <section>
-      <Box className="mx-auto w-full max-w-[1120px] rounded-[28px] p-8 sm:p-10">
+      <Box className="w-full rounded-[28px] p-8 sm:p-10">
         <div className="flex flex-wrap items-start justify-between gap-6">
           <div>
             <p className="text-[0.7rem] uppercase tracking-[0.3em] text-accent-dark">
