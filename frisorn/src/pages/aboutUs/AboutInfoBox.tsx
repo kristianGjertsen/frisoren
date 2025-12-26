@@ -14,7 +14,6 @@ const aboutImages = [
 ]
 
 function AboutUsInfo() {
-
     return (
         <Box className="w-full p-8 sm:p-10">
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
