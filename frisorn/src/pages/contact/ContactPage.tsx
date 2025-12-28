@@ -42,7 +42,12 @@ function ContactPage() {
               </div>
               <div className="mt-2 space-y-1 text-muted">
                 <p>918 32 002</p>
-                <p>dybdahlsvei@xn--frisrn-eya.no</p>
+                <a
+                  className="inline-flex text-muted hover:text-accent-dark"
+                  href="mailto:dybdahlsvei@xn--frisrn-eya.no"
+                >
+                  dybdahlsvei@xn--frisrn-eya.no
+                </a>
               </div>
             </div>
 
