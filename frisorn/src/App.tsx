@@ -61,7 +61,7 @@ function App() {
     setPaletteIndex((current) => (current + 1) % palettes.length)
   }
   const path = typeof window === 'undefined' ? '/' : window.location.pathname || '/'
-  const Page = routes[path as keyof typeof routes] ?? NotFound
+    const Page = routes[path as keyof typeof routes] ?? NotFound
 
   return (
     <div className="bg-background bg-page text-text">

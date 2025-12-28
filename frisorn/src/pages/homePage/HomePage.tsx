@@ -62,9 +62,15 @@ function HomePage() {
                         </div>
                         <div className="rounded-[var(--radius-card)] border-[var(--border-width)] border-border bg-surface-warm p-5">
                             <p className="text-[0.7rem] uppercase tracking-[0.28em] text-accent-dark">
-                                Telefon
+                                Telefon & e-post
                             </p>
                             <p className="mt-3 text-lg font-semibold text-text">918 32 002</p>
+                            <a
+                                className="mt-1 inline-flex text-sm text-muted hover:text-accent-dark"
+                                href="mailto:dybdahlsvei@xn--frisrn-eya.no"
+                            >
+                                dybdahlsvei@xn--frisrn-eya.no
+                            </a>
                         </div>
                         <div className="rounded-[var(--radius-card)] border-[var(--border-width)] border-border bg-surface-warm p-5">
                             <p className="text-[0.7rem] uppercase tracking-[0.28em] text-accent-dark">

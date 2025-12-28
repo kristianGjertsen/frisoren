@@ -45,7 +45,12 @@ function Footer() {
                 <rect x="3" y="5" width="18" height="14" rx="2" />
                 <path d="m3 7 9 6 9-6" />
               </svg>
-              <span>dybdahlsvei@xn--frisrn-eya.no</span>
+              <a
+                className="text-muted hover:text-accent-dark"
+                href="mailto:dybdahlsvei@xn--frisrn-eya.no"
+              >
+                dybdahlsvei@xn--frisrn-eya.no
+              </a>
             </div>
             <a
               className="flex items-center gap-2 text-muted hover:text-accent-dark"
