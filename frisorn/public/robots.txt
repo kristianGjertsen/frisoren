@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://frisorn.no/sitemap.xml
+Sitemap: https://www.xn--frisrn-eya.no/sitemap.xml

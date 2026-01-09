@@ -17,11 +17,9 @@ function HomePage() {
                                 <p className="text-[0.7rem] uppercase tracking-[0.3em] text-accent-dark">
                                     Velkommen til oss!
                                 </p>
-                                <h1 className="mt-3 font-['Playfair_Display'] text-3xl text-accent sm:text-4xl lg:text-5xl">
-                                    Personlig frisør
-                                </h1>
-                                <h1 className="mt-3 font-['Playfair_Display'] pl-20 text-3xl text-accent-dark sm:text-4xl lg:text-5xl">
-                                    Presist håndtverkt
+                                <h1 className="mt-3 font-['Playfair_Display'] text-3xl text-accent sm:text-4xl lg:text-5xl leading-tight">
+                                    <span className="block sm:inline">Personlig frisør</span>
+                                    <span className="block text-accent-dark sm:ml-3 sm:inline">Presist håndverk</span>
                                 </h1>
                                 <p className="mt-4 max-w-lg text-sm text-muted sm:text-base">
                                     Vi er tilbake i nyoppusset lokale i Dybdahls vei 3-5. Bestill
