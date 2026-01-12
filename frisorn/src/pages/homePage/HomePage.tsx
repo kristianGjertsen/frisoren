@@ -30,9 +30,6 @@ function HomePage() {
                                 <Button href="/kontakt">
                                     Bestill time
                                 </Button>
-                                <Button href="/produkter">
-                                    Se produkter
-                                </Button>
                             </div>
                         </div>
                         <div className="w-full">

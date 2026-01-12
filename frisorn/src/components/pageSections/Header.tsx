@@ -5,7 +5,6 @@ const navItems = [
   { label: 'Hjem', href: '/' },
   { label: 'Kontakt', href: '/kontakt' },
   { label: 'Om oss', href: '/om-oss' },
-  { label: 'Produkter', href: '/produkter' },
 ]
 
 function Header() {
