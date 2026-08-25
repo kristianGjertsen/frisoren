@@ -43,12 +43,12 @@ function HomePage() {
                     </div>
                     <div className="mt-8 grid gap-4 lg:grid-cols-[1.4fr_0.8fr_0.8fr]">
                         <div className="rounded-[var(--radius-card)] border-[var(--border-width)] border-border bg-surface-warm p-5">
-                            <p className="text-[0.7rem] uppercase tracking-[0.28em] text-accent-dark">
+                            <p className="text-[0.9rem] uppercase tracking-[0.28em] text-accent-dark">
                                 Åpningstider
                             </p>
-                            <dl className="mt-3 grid gap-x-6 gap-y-1 text-xs text-text sm:grid-cols-2 sm:text-sm">
+                            <dl className="mt-3 grid gap-x-6 gap-y-1 text-m text-text sm:grid-cols-2 sm:text-sm">
                                 {openingHours.map(({ day, hours }) => (
-                                    <div key={day} className="grid grid-cols-[4.5rem_1fr] gap-2">
+                                    <div key={day} className="grid grid-cols-[4.5rem_1fr] text-lg gap-2">
                                         <dt>{day}</dt>
                                         <dd className="tabular-nums">{hours}</dd>
                                     </div>
@@ -56,23 +56,23 @@ function HomePage() {
                             </dl>
                         </div>
                         <div className="rounded-[var(--radius-card)] border-[var(--border-width)] border-border bg-surface-warm p-5">
-                            <p className="text-[0.7rem] uppercase tracking-[0.28em] text-accent-dark">
+                            <p className="text-[0.9rem] uppercase tracking-[0.28em] text-accent-dark">
                                 Telefon & e-post
                             </p>
                             <p className="mt-3 text-lg font-semibold text-text">918 32 002</p>
                             <a
-                                className="mt-1 inline-flex text-sm text-muted hover:text-accent-dark"
+                                className="mt-1 inline-flex text-md text-muted hover:text-accent-dark"
                                 href="mailto:dybdahlsvei@xn--frisrn-eya.no"
                             >
                                 dybdahlsvei@xn--frisrn-eya.no
                             </a>
                         </div>
                         <div className="rounded-[var(--radius-card)] border-[var(--border-width)] border-border bg-surface-warm p-5">
-                            <p className="text-[0.7rem] uppercase tracking-[0.28em] text-accent-dark">
+                            <p className="text-[0.9rem] uppercase tracking-[0.28em] text-accent-dark">
                                 Adresse
                             </p>
                             <p className="mt-3 text-lg font-semibold text-text">Dybdahls veg 3-5</p>
-                            <p className="text-sm text-muted">7051 Trondheim</p>
+                            <p className="text-md text-muted">7051 Trondheim</p>
                         </div>
                     </div>
                 </Box>
