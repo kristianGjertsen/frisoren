@@ -1,3 +1,5 @@
+import { openingHours } from '../../data/openingHours'
+
 function Footer() {
   return (
     <footer className="px-7 pb-6 sm:px-10 lg:px-14">
@@ -97,19 +99,17 @@ function Footer() {
 
           <div className="space-y-3 text-sm">
             <h3 className="font-secondary text-lg">Åpningstider</h3>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="space-y-1 text-muted">
-                <p>Mandag: 09:00 - 17:00</p>
-                <p>Tirsdag: 09:00 - 16:00</p>
-                <p>Onsdag: 09:00 - 16:00</p>
-                <p>Torsdag: 09:00 - 17:00</p>
-              </div>
-              <div className="space-y-1 text-muted">
-                <p>Fredag: 09:00 - 16:00</p>
-                <p>Lørdag: Etter avtale</p>
-                <p>Søndag: Stengt</p>
-              </div>
-            </div>
+            <dl className="grid max-w-72 gap-y-1 text-muted">
+              {openingHours.map(({ day, hours }) => (
+                <div
+                  key={day}
+                  className="grid grid-cols-[5rem_minmax(0,1fr)] gap-4"
+                >
+                  <dt>{day}</dt>
+                  <dd className="text-right tabular-nums">{hours}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
 
