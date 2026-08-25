@@ -13,7 +13,7 @@ type ButtonProps = {
 const baseClass =
   'bg-button border-[var(--border-width)] border-border text-button-text inline-flex items-center justify-center gap-2 rounded-[var(--radius-pill)] px-6 py-2.5 font-semibold '
 
-const hoverAnimClass = "hover:ring-2 transform  hover:ring-accent"
+const hoverAnimClass = "hover:bg-[var(--color-hover)]"
 const fullClass = `${baseClass} ${hoverAnimClass}`
 function Button({ href, onClick, className, children }: ButtonProps) {
 
