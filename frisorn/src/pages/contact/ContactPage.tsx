@@ -1,4 +1,5 @@
 import Box from '../../components/elements/Box'
+import { openingHours } from '../../data/openingHours'
 
 function ContactPage() {
   return (
@@ -96,15 +97,17 @@ function ContactPage() {
               </span>
               <h3 className="font-secondary text-lg text-text">Åpningstider</h3>
             </div>
-            <ul className="mt-2 space-y-1 text-muted">
-              <li>Mandag: 09:00 - 17:00</li>
-              <li>Tirsdag: 09:00 - 16:00</li>
-              <li>Onsdag: 09:00 - 16:00</li>
-              <li>Torsdag: 09:00 - 17:00</li>
-              <li>Fredag: 09:00 - 16:00</li>
-              <li>Lørdag: Etter avtale</li>
-              <li>Søndag: Stengt</li>
-            </ul>
+            <dl className="mt-2 grid max-w-72 gap-y-1 text-muted">
+              {openingHours.map(({ day, hours }) => (
+                <div
+                  key={day}
+                  className="grid grid-cols-[5rem_minmax(0,1fr)] gap-4"
+                >
+                  <dt>{day}</dt>
+                  <dd className="text-right tabular-nums">{hours}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </Box>

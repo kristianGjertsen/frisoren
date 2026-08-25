@@ -1,5 +1,6 @@
 import Box from '../../components/elements/Box'
 import Button from '../../components/elements/Button'
+import { openingHours } from '../../data/openingHours'
 import AboutUsInfo from '../aboutUs/AboutInfoBox'
 
 import entryImage from '../../assets/SaloonImages/inngang.jpg'
@@ -45,15 +46,14 @@ function HomePage() {
                             <p className="text-[0.7rem] uppercase tracking-[0.28em] text-accent-dark">
                                 Åpningstider
                             </p>
-                            <div className="mt-3 grid gap-1 text-xs font-semibold text-text sm:grid-cols-2 sm:text-sm">
-                                <p>Mandag: 09:00 - 17:00</p>
-                                <p>Tirsdag: 09:00 - 16:00</p>
-                                <p>Onsdag: 09:00 - 16:00</p>
-                                <p>Torsdag: 09:00 - 17:00</p>
-                                <p>Fredag: 09:00 - 16:00</p>
-                                <p>Lørdag: Etter avtale</p>
-                                <p>Søndag: Stengt</p>
-                            </div>
+                            <dl className="mt-3 grid gap-x-6 gap-y-1 text-xs text-text sm:grid-cols-2 sm:text-sm">
+                                {openingHours.map(({ day, hours }) => (
+                                    <div key={day} className="grid grid-cols-[4.5rem_1fr] gap-2">
+                                        <dt>{day}</dt>
+                                        <dd className="tabular-nums">{hours}</dd>
+                                    </div>
+                                ))}
+                            </dl>
                         </div>
                         <div className="rounded-[var(--radius-card)] border-[var(--border-width)] border-border bg-surface-warm p-5">
                             <p className="text-[0.7rem] uppercase tracking-[0.28em] text-accent-dark">
