@@ -30,7 +30,7 @@ function App() {
   const Page = routes[path as keyof typeof routes] ?? NotFound
 
   return (
-    <div className="min-h-dvh grid grid-rows-[auto_1fr_auto] bg-background bg-page text-text">
+    <div className="min-h-dvh grid grid-rows-[auto_1fr_auto] bg-background text-text">
       <Header />
 
       <main className="min-w-0 px-7 pt-10 pb-16 sm:px-10 lg:px-14">
