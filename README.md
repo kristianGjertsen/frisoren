@@ -10,13 +10,6 @@ Statisk nettsted for Frisør'n i Dybdahls veg 3-5. Prosjektet driftes gjennom mi
 - Vite + React + TypeScript.
 - Tailwind CSS 
 
-## Kjør lokalt
-```bash
-cd frisorn
-npm install
-npm run dev
-```
-Åpne dev-serverens URL i nettleseren.
 
 
 
